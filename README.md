@@ -39,11 +39,6 @@ projects/: A directory containing detailed descriptions and images of my project
 assets/: A directory for images, fonts, and other static resources.
 Usage
 
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/digital-portfolio.git
-
 Navigate to the project directory:
 bash
 Copy code
