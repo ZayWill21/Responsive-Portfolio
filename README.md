@@ -62,7 +62,7 @@ python app.py
 Contact
 Feel free to reach out if you have any questions or suggestions!
 
-Email: your.email@example.com
-LinkedIn: your LinkedIn profile
+Email: Isaiahgwilliam@gmail.com
+LinkedIn: https://www.linkedin.com/in/isaiah-william-6b7aab249/
 Thank you for visiting my Digital Portfolio repository. I hope you enjoy exploring my work as much as I enjoyed creating it!
 
