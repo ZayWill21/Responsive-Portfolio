@@ -1,5 +1,7 @@
 Digital Portfolio
+
 Overview
+
 Welcome to my Digital Portfolio project! This repository contains the code for my personal portfolio website, developed using HTML, CSS, JavaScript, and Python. This portfolio showcases my skills, projects, and experiences in the field of technology and serves as a central hub for potential employers, collaborators, and anyone interested in my work.
 
 Features
