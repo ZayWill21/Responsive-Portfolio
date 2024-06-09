@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/mediaqueries.css') }}">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Isaiah William</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#contacts">contacts</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Isaiah William</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="/about" onclick="toggleMenu()">About</a></li>
+                <li><a href="/experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="/project" onclick="toggleMenu()">project</a></li>
+                <li><a href="/contacts" onclick="toggleMenu()">contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="{{ url_for('static',    filename='asset/pinksuit-cropped.png') }}" alt="Isaiah William profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Isaiah William</h1>
+            <p class="section_text_p2">Information Techology Student at Unveristy of Cental Florida </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./asset/Isaiah-Resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href= './#contacts'">Contact Information</button>
+        
+            </div>
+            <div id="socials-container">
+                <img src="{{ url_for('static',    filename='asset/linkedin.png') }}" alt="My Linkedin Profile" class="icon" onclick="location.href='https:www.linkedin.com/in/isaiah-william-6b7aab249/'">
+                <img src="{{ url_for('static',    filename='asset/github.png') }}" alt="My github Profile" class="icon" onclick="location.href='https:github.com/ZayWill21'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1"> Learn More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="{{ url_for('static',    filename='asset/aboutpic.jpg') }}" class="about-pic" alt="About me picture" class="aboutpic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="{{ url_for('static',    filename='asset/experience.png') }}" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ year <br/> IT Operations </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="{{ url_for('static',    filename='asset/education.png') }}" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>A.A Information Technology GPA: 3.5 <br />B.S Information Technology GPA: 3.33</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am Isaiah William, a dedicated STEM ambassador and active member of the National Society of Black Engineers (NSBE).
+                        Currently pursuing a degree in Information Technology at the University of Central Florida, I am passionately working
+                        towards becoming a cloud engineer. I am currently studying for Azure Associate certifications and plan on building
+                        projects focused on cloud workflows. My goal is to become a professional who can inspire the next generation of tech
+                        professionals, demonstrating how technology can positively impact lives and drive innovation.
+                        
+                        Through my involvement in various STEM initiatives and continuous learning, I strive to inspire others and make a
+                        significant impact in the field of cloud computing. I am excited to connect more with the industry, engage with
+                        professionals, and contribute to the advancement of technology. By forging these connections, I aim to deepen my
+                        understanding and stay at the forefront of technological advancements, while sharing my knowledge and experiences to
+                        motivate and guide future tech enthusiasts.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="{{ url_for('static',    filename='asset/arrow.png') }}" alt="Arrow Icon"   class="arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <div class="article-container">
+                        <h2 class="experience-sub-title">Information Technology Intern</h2>
+                        <article>
+                            <p>
+                                <ul>
+                                    <p>Served over 300 employees within the Support Services, Cybersecurity, and Networking team.</p>
+                                    <p>Closed over 70+ tickets varying from monitors, desktops, UPS, and docking stations.</p>
+                                    <p>Used PuTTy, to configure AAA authentication, Port security, default gateways and VLANs on 10+ switches.</p>
+                                </ul>
+                            </p>
+                        </article>
+                    </div>
+                    <div class="article-container">
+                        <article>
+                            <br>
+                            <h2 class="experience-sub-title">Infrastructure Intern </h2>
+                            <p>
+                                <ul>
+                                    <p>Deployed a WIDS and WIPS solution, tested solution using Evil Twin, Brute Force etc. Decrease the wireless attack.</p>
+                                    <p>Configured a SQL server in VMware, migrated and updated servers.</p>
+                                    <p>Building a framework for future and current documentation within the IT department.</p>
+                                </ul>
+                            </p>
+                        </article>
+                    </div>
+                    <div class="article-container">
+                        <article>
+                            <br>
+                            <h2 class="experience-sub-title">STEM Ambassador </h2>
+                            <p>
+                                <ul>
+                                    <p>Mentorship and Guidance: Providing mentorship to students interested in STEM fields, helping them navigate academic and
+                                    career pathways.</p>
+                                    <p>Outreach and Engagement: Organizing and participating in outreach events, workshops, and presentations to inspire and
+                                    educate students about the opportunities in STEM.</p>
+                                    <p>Leadership and Development: Developing leadership skills by leading projects, coordinating events, and working with a
+                                    team of fellow ambassadors to promote STEM initiatives.</p>
+                                </ul>
+                            </p>
+                        </article> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{{ url_for('static',    filename='asset/arrow.png') }}" alt="Arrow Icon" class="arrow" onclick="location.href='./#project'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="project-details-container color-container">
+                    <h2 class="experience-sub-title">IoT Code Design</h2>
+                    <div class="article-container">
+                        <img src="{{ url_for('static',    filename='asset/micro-controller.jpg') }}" class="project-img" alt="Project 1" width="400" height="400">
+                    </div>
+                    <div class="btn-container project-btn">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https:github.com/ZayWill21/IoT-Code-Design-'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="project-details-container color-container">
+                    <h2 class="experience-sub-title">Hack@UCF Infrastructure</h2>
+                    <div class="article-container">
+                        <img src="{{ url_for('static',    filename='asset/infra-pic.jpg') }}" alt="Project 2" class="project-img" width="400" height="400">
+                    </div>
+                    <div class="btn-container project-btn">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https:github.com/ZayWill21/PCV2-Wiki'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <img src="{{ url_for('static',    filename='asset/arrow.png') }}" alt="Arrow Icon" class="arrow" onclick="location.href='./#contacts'">
+    </section>
+    <section id="contacts">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title"> Contacts Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="{{ url_for('static',    filename='asset/email.png') }}" alt="email icon" class="icon contact-icon">
+                <p><a href="mailto:isaiahgwilliam@gmail.com">isaiahgwilliam@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="{{ url_for('static',    filename='asset/linkedin.png') }}" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/isaiah-william-6b7aab249/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="static/script.js"></script>
+</body>
+</html>
